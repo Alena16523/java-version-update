@@ -22,10 +22,18 @@ public class Main {
             BaseballPlayer pat=new BaseballPlayer("Pat");
             SoccerPLayer beckham =new SoccerPLayer("Beckham");
 
-            Team liverpool=new Team("Liverpool"); //team accepting any object ->problem
-            liverpool.addPlayer(joe);
-            liverpool.addPlayer(pat);
+            Team<SoccerPLayer> liverpool=new Team("Liverpool"); //team accepting any object ->problem
+            //liverpool.addPlayer(joe); they do not belong as were created from other classes
+            //liverpool.addPlayer(pat);
             liverpool.addPlayer(beckham);
+
+            //Team<String> brokenTeam=new Team<>("what kin dof team is this?");
+
+            //Team<Integer> t2=new Team<>("Very wierd");
+
+
+
+
 
 
 
