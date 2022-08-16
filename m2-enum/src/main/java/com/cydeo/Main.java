@@ -37,6 +37,10 @@ public class Main {
         System.out.println("Operation task");
         calculate(3,5,Operation.PLUS);
 
+        System.out.println("How to retrieve the constant value");
+        System.out.println(Currency.PENNY.getValue());
+        System.out.println(Currency.DIME.getValue()); //using getters
+        System.out.println(Currency.QUARTER.ordinal()); //3 -> index number of the constant in the enum
 
 
     }
