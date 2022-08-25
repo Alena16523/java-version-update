@@ -121,6 +121,10 @@ class TransactionTest {
         System.out.println("--------------------------------");
         System.out.println("8. Find the transaction with the smallest value.");
 
+        Optional<Integer> reduce2= TraderData.getAll().stream()
+                .map(p->p.getValue())
+                .reduce(Integer::min);
+        System.out.println(reduce2.get());
 
 
     }
